@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>health website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&family=Rock+3D&display=swap"rel="stylesheet">
+</head>
+<style>
+    /*css reset meaning margin wagera*/
+    body {
+        font-family: 'Lobster', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/28135651.jpg');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        height: 900px;
+    }
+
+    .left {
+        border: 1px solid red;
+        display: inline-block;
+        position: absolute;
+        left: 1px;
+        top: 2px;
+    }
+
+    .left img {
+        width: 100px;
+        height: 80px;
+
+    }
+
+    .right {
+        border: 1px solid blue;
+        display: inline-block;
+        position: absolute;
+        right: 1px;
+        top: 2px;
+    }
+
+    .mid {
+        border: 2px solid green;
+        width: 50%;
+        margin: 3px auto;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font size: 24px;
+    }
+
+    .navbar li a:hover {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: black;
+        padding: 20px 20px;
+    }
+
+    .container {
+        border: 2px solid grey;
+        border-radius: 10px;
+        margin-top: 600px;
+        width: 30%;
+        margin-left: 3px;
+        height: 30%;
+        background-color: white;
+    }
+    .formgroup input
+    {
+        text-align:center;
+        display: block;
+        width: 50%;
+        padding: 8px;
+        border: 1px solid black;
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       margin: 1px auto;
+       font-size: 12px;
+    }
+    .container button{
+     display: block;
+     width: 60%;
+     margin: 5px auto;
+     font-size: large;
+    }
+
+    .btn {
+        margin: 1px 1px;
+        color: black;
+        padding: 2px;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: 'Lobster', cursive;
+    }
+</style
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="img/logo.jpg">
+            <div> Adnan fitness center</div>
+        </div>
+        <!--Mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Know About Us</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">
+                Call us now
+            </button>
+            <button class="btn">
+                Email
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1> Join the best Gym of Delhi now</h1>
+        <form action="void.php">
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Pls Enter Your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Pls Enter Your Email ID">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Pls Enter Your Phone Number">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Pls Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
